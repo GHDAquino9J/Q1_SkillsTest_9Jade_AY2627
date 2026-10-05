@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Skills Test</title>
+    <link rel="stylesheet" href="styles_Q1SkillsTest.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- Logo and Heading -->
+        <div class="header-section">
+            <img src="https://via.placeholder.com/120x80?text=OBMC+Logo" alt="OBMC Robotics Center Logo" class="logo">
+            <h1>OBMC Robotics Club Application Form</h1>
+        </div>
+
+        <!-- Introduction Paragraph -->
+        <p>Welcome! Please fill out this form to <strong>apply</strong> for our school's Robotics Club.</p>
+
+        <!-- Form Elements -->
+        <form action="#" method="POST">
+            
+            <!-- Full Name -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Grade Level -->
+            <label for="grade">Grade Level:</label>
+            <select id="grade" name="grade">
+                <option value="grade7">Grade 7</option>
+                <option value="grade8">Grade 8</option>
+                <option value="grade9">Grade 9</option>
+                <option value="grade10">Grade 10</option>
+            </select>
+
+            <!-- Gender -->
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male" class="inline-label">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female" class="inline-label">Female</label>
+            </div>
+
+            <!-- Skills Checkboxes -->
+            <label>What are your skills?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="coding" name="skills" value="Coding">
+                <label for="coding" class="inline-label">Coding</label>
+                
+                <input type="checkbox" id="design" name="skills" value="Design">
+                <label for="design" class="inline-label">Design</label>
+                
+                <input type="checkbox" id="electronics" name="skills" value="Electronics">
+                <label for="electronics" class="inline-label">Electronics</label>
+            </div>
+
+            <!-- Textarea -->
+            <label for="reason">Tell us why you want to join:</label>
+            <textarea id="reason" name="reason" rows="4"></textarea>
+
+            <!-- Unordered List Heading & Items -->
+            <h3>Top Robotics Activities We Offer:</h3>
+            <ul>
+                <li>Line Following Robots</li>
+                <li>Obstacle Avoidance Programming</li>
+                <li>Light Following Robot</li>
+            </ul>
+
+            <!-- Helpful Links Heading & Ordered List -->
+            <h3>Helpful Links:</h3>
+            <ol>
+                <li><a href="https://www.robotics.org" target="_blank">Robotics.org</a></li>
+                <li><a href="https://www.firstinspires.org" target="_blank">FIRST Robotics</a></li>
+            </ol>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Application</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
